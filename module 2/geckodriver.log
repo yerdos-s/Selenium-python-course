@@ -1,0 +1,23 @@
+1657271029484	geckodriver	INFO	Listening on 127.0.0.1:64273
+1657271032565	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "64274" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\erdos\\AppData\\Local\\Temp\\rust_mozprofileWdwgwr"
+1657271049796	geckodriver	INFO	Listening on 127.0.0.1:64313
+1657271052822	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "64314" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\erdos\\AppData\\Local\\Temp\\rust_mozprofileomrHvN"
+1657271053175	Marionette	INFO	Marionette enabled
+1657271053179	Marionette	INFO	Listening on port 64325
+Read port: 64325
+WebDriver BiDi listening on ws://localhost:64314
+1657271053281	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\erdos\\AppData\\Local\\Temp\\rust_mozprofileomrHvN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64314/devtools/browser/78cbeaf7-d2e3-4362-bdc5-b074c00e00ea
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://suninjuly.github.io"
+1657271056453	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1657271059848	Marionette	INFO	Stopped listening on port 64325
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 16200, Main Thread] WARNING: ContentParent: id=28f4008f600 - BlockShutdown: CanSend.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:3586
+[Parent 16200, Main Thread] WARNING: ContentParent: id=28f4008f600 - ShutDownProcess: Sent shutdown message.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:1790
+[Parent 16200, Main Thread] WARNING: ContentParent: id=28f4008f600 - ShutDownProcess: Closing channel.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:1825
+[Parent 16200, Main Thread] WARNING: ContentParent: id=28f4008f600 - RemoveShutdownBlockers: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:3688
