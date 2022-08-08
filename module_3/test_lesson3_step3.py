@@ -1,9 +1,10 @@
-import unittest
+import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-class Test(unittest.TestCase):
-    def test_registration1(self):
+
+def test_registration1():
+    try:
         link = "http://suninjuly.github.io/registration1.html"
         browser = webdriver.Chrome()
         browser.implicitly_wait(5)
@@ -21,10 +22,13 @@ class Test(unittest.TestCase):
         button.click()
         welcome_text_elt = browser.find_element(By.TAG_NAME, "h1")
         welcome_text = welcome_text_elt.text
-        self.assertEqual(welcome_text,'Congratulations! You have successfully registered!', \
-                             'the text does not match')
+        assert welcome_text == 'Congratulations! You have successfully registered!', \
+            'the text does not match'
+    finally:
+        browser.quit()
 
-    def test_registration2(self):
+def test_registration2():
+    try:
         link = "http://suninjuly.github.io/registration2.html"
         browser = webdriver.Chrome()
         browser.implicitly_wait(5)
@@ -42,7 +46,11 @@ class Test(unittest.TestCase):
         button.click()
         welcome_text_elt = browser.find_element(By.TAG_NAME, "h1")
         welcome_text = welcome_text_elt.text
-        self.assertEqual(welcome_text,'Congratulations! You have successfully registered!', \
-                             'the text does not match')
+        assert welcome_text == 'Congratulations! You have successfully registered!', \
+            'the text does not match'
+    finally:
+        browser.quit()
+
+
 if __name__ == '__main__':
-    unittest.main()
+    pytest.main()
